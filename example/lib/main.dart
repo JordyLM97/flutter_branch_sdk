@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
 
     FlutterBranchSdk.setIdentity('branch_user_test');
 
-    //requestATTTracking();
+    requestATTTracking();
   }
 
   void requestATTTracking() async {
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
 
     final uuid = await FlutterBranchSdk.getAdvertisingIdentifier();
     if (kDebugMode) {
-      print(uuid);
+      print("uuid $uuid");
     }
   }
 
